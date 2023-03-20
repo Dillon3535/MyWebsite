@@ -1,0 +1,187 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website - Dillon Alterio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--####<img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Graduate</p>
+                <h1>Hello! My name is <span>Dillon</span><br>Alterio From Connecticut - USA </h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Recent Computer Science graduate with experience in five plus programing languages.  Particularly skilled in Java and Python.  Seeking to use my front-end 
+                    and back-end development experience in an entry-level or intern position.  Highly motivated and team oriented. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">My Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Personal Skills</span><br>HardWorker<br>Creativity<br>Team Player<br>Determined<br>Problem Solving</li>
+                            <li><span>Programing Skills</span><br>SQL<br>MariaDB<br>Python<br>Java<br>JavaScript<br>CSS<br>HTML<br>PHP</li>
+                            <li><span>Tools</span><br>GitHub<br>VSC<br>Jupyter<br>Eclipse</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Dispatcher/Drivers Associate</li>
+                                <li>- Dispatch work includes reading data produced by the drivers and assigning rescues based off this data</li>
+                                <li>- Creation of tickets for various events that would happen while dispatching, then inputting that data into a database</li>
+                                <li>- Dissect the route data, coordinate, and dispatch the best drivers for the routes that best fit each driver abilities</li>
+                            <li><span>2010- 2020</span><br>Healthcare Technician</li>
+                                <li>- Customer service technician which included interactions with patients, family members, or staff members</li>
+                                <li>- Management and input of all relevant equipment and supplies data for each individual facility into the database</li>
+                                <li>- Delivery of liquid oxygen and relevant oxygen equipment to hospitals and nursing homes</li>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>Bachelor's in Computer Science: Southern Connecticut State University </li>
+                            <li> - Concentration: Information Technology</li>
+                            <li> - GPA: 3.10 </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Student Employment Finder</h3>
+                        <p>This application connects you to various individuals who are looking for work.  The application was built with the main focus of users being current or recent graduate students.</p>
+                        <a href= project1.html ><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Owl School Event Planner</h3>
+                        <p>This application allows the user to submit events into the schools database for students to view and join if they so desire to. </p>
+                        <a href="project2.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>CyberSecurity Attack Dashboards</h3>
+                        <p>This application consist of a collection of data from various cybersecurity attacks against a Universities servers.</p>
+                        <a href="project3.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> dillonalterio@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 203-343-3375</p>
+                    <a href="images/dillonalterioresume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Author: Dillon Leonard Alterio <i class="fas fa-stamp"></i></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL ='https://script.google.com/macros/s/AKfycbz19ziOGFNZUg_qcEBZrGXVP-KB_2kADKNJZtb7OEEJZCiLGZsyMqUX_2lYOCEqnKze/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+  
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
